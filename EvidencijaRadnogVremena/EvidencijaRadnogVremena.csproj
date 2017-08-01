@@ -180,11 +180,18 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Handlers\RequestHandler.cs" />
+    <Compile Include="Models\Absences.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Company.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\FreeDays.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MySQLDatabase.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Models\WorkExperience.cs" />
+    <Compile Include="Models\WorkingDays.cs" />
+    <Compile Include="Models\WorkLogTimerStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
