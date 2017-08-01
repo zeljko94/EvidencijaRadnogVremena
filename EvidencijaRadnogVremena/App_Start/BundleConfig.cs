@@ -25,7 +25,17 @@ namespace EvidencijaRadnogVremena
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      //"~/Content/site.css",
+                      "~/Content/vendor/bootstrap/css/bootstrap.min.css",
+                      "~/Content/vendor/metisMenu/metisMenu.min.css",
+                      "~/Content/dist/css/sb-admin-2.css",
+                      "~/Content/vendor/morrisjs/morris.css",
+                      "~/Content/vendor/font-awesome/css/font-awesome.min.css"  ));
+
+            bundles.Add(new ScriptBundle("~/bundles/morris").Include(
+                        "~/Content/vendor/raphael/raphael.min.js",
+                        "~/Content/vendor/morrisjs/morris.min.js",
+                        "~/Content/data/morris-data.js"));
         }
     }
 }
