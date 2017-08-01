@@ -36,11 +36,11 @@ namespace EvidencijaRadnogVremena.Controllers
                             Session["user"] = user;
                             if (user.Privileges.Equals("peoplecounteruser"))
                             {
-                                return RedirectToAction("Index", "Home");
+                                return RedirectToAction("Index", "User");
                             }
                             else if (user.Privileges.Equals("peoplecounteradmin"))
                             {
-                                return RedirectToAction("Index", "Home");
+                                return RedirectToAction("Index", "Admin");
                             }
                         }
                         else
