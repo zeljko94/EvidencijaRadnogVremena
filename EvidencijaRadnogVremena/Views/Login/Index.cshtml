@@ -4,13 +4,41 @@
 }
 
 
-<form method="post" action="/Login/Index">
-    <table>
-        <thead>
-            <tr>
-                <th>Username:</th>
-                <th></th>
-            </tr>
-        </thead>
-    </table>
-</form>
+<div class="row">
+    <div class="col-sm-12" style="height: 150px;"></div>
+</div>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="panel  panel-primary">
+                <div class="panel-heading">
+                    <i class="fa fa-2x fa-unlock-alt"></i>&nbsp;&nbsp;<span class="panel-title">Login:</span>
+                </div>
+                <div class="panel-body">
+                    <form method="post" action="/Login/Index">
+                        <table>
+                            <tr>
+                                <td><label for="username">Username:</label></td>
+                                <td><input type="text" class="form-control" name="username" id="password" placeholder="Username..." value="@ViewBag.username" /></td>
+                            </tr>
+                            <tr>
+                                <td><label for="password">Password:</label></td>
+                                <td><input type="password" class="form-control" name="password" id="password" /></td>
+                            </tr>
+                            <tr>
+                                <td><button type="submit" class="btn btn-primary" name="btnSubmit" id="btnSubmit" value="Login">Log in</button></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><p style="@ViewBag.errorStyle">@ViewBag.errors</p></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
